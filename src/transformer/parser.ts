@@ -1,5 +1,5 @@
-import { Token } from "./Tokens/lexer";
-import { Statement, Expressions } from "./Nodes/ast";
+import { Token } from "./Tokens/lexer.js";
+import { Statement, Expressions } from "./Nodes/ast.js";
 
 export class Parser {
     /**
@@ -21,11 +21,11 @@ export class Parser {
      * 
      * @returns the current position
      */
-    private peek() {
+    public peek() {
         return this.TOKENS[this.POSITION];
     }
 
-    private consume() {
+    public consume() {
         return this.TOKENS[this.POSITION++]
     }
 

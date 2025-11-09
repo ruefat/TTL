@@ -1,17 +1,22 @@
 {
-  "name": "mvp",
+  "name": "ttluau",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "out/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "@types/node": "^24.10.0",
+    "chokidar": "^4.0.3",
     "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/chokidar": "^1.7.5",
+    "@types/node": "^24.10.0"
   }
 }
